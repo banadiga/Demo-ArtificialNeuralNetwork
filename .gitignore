@@ -1,6 +1,23 @@
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
+bin
+*.class
+
+# Package Files #
+*.jar
+
+# IDEA droppings
+.idea
+*.iml
+
+# Eclipse
+*.project
+*.settings
+*.classpath
+*.springBeans
+*.checkstyle
+
+# mac os x
+.DS_Store
+
+
+
+
