@@ -3,7 +3,9 @@ package perceptron;
 public final class DataSource {
 
     public static final int count;
+
     public static final double[][] input;
+
     public static final double[] output;
 
     static {

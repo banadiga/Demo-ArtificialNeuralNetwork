@@ -11,9 +11,9 @@ public class Application {
     }
 
     private void study(double[][] input, double[] output) {
-        System.err.println("study...");
+        System.out.println("Study...");
         int iterations = artificialNeuralNetwork.study(input, output);
-        System.err.println("Count of iterations :" + iterations);
+        System.out.println("Count of iterations :" + iterations);
     }
 
     private void test(double[][] input) {
@@ -26,15 +26,19 @@ public class Application {
     public static void main(String[] args) {
         Application application = new Application();
 
-        System.err.println("Test without study.");
+        System.out.println("-----------------------------------");
+        System.out.println("Test without study.");
         application.test(DataSource.input);
 
+        System.out.println("-----------------------------------");
         application.study(DataSource.input, DataSource.output);
 
-        System.err.println("Test after study");
+        System.out.println("-----------------------------------");
+        System.out.println("Test after study");
         application.test(DataSource.input);
 
-        System.err.println("Other input data");
+        System.out.println("-----------------------------------");
+        System.out.println("Other input data");
         application.test(new double[][] { { 1, 0 } });
     }
 }
